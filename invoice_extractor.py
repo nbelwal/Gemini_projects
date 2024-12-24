@@ -38,7 +38,8 @@ if uploaded_file is not None:
 submit = st.button("Let's Go")
 
 # Setting model context 
-context = '''
+context = '''extract the content of the image'''
+'''
 you are a multilanguage invoice extrator. Please tell all the information asked about the invoice. And first, check if the provided image is invoice or not, if not, then say "provided image is not an invoice". if the image is invoice then, check if the question asked about it is related to invoice or not, if not say "The question is not related to invoice". if it is related then, answer accordinly. and if no question is asked, provide all the info from the invoice
 '''
 
